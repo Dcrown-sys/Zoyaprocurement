@@ -156,6 +156,7 @@ export default function Home() {
             <a href="https://x.com/zoyainc/status/1964458056319955377?s=46&t=x-PJXEviGpxYzleGbCmrjA" className="hover:text-green-400 transition-colors duration-300">X</a>
             <a href="https://www.instagram.com/p/DOHDU7ADPiU/?igsh=MW13bHExcWswOXYyOQ==" className="hover:text-green-400 transition-colors duration-300">Instagram</a>
             <a href="https://www.tiktok.com/t/ZP8BE1x69/" className="hover:text-green-400 transition-colors duration-300">Tiktok</a>
+            <h3>Zoyaprocurement Ventures</h3>
           </div>
         </div>
       </footer>

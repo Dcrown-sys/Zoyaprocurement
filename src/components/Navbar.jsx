@@ -1,6 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useState } from "react";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline"; // Install: npm install @heroicons/react
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom"; // ✅ Import Link
 import logo from "../assets/logo.png";
 
 export default function Navbar() {
@@ -23,7 +24,7 @@ export default function Navbar() {
           </span>
         </a>
 
-        {/* Desktop nav links + search */}
+        {/* Desktop nav links + search + auth buttons */}
         <div className="hidden md:flex items-center space-x-4">
           {navLinks.map((link) => (
             <a
@@ -52,6 +53,20 @@ export default function Navbar() {
           >
             Join Waitlist
           </a>
+
+          {/* ✅ React Router links for Sign Up / Log In */}
+          <Link
+            to="/signup"
+            className="bg-purple-700 text-white px-3 py-1.5 rounded-md hover:bg-purple-900 hover:shadow-lg transition duration-200 font-semibold text-sm"
+          >
+            Sign Up
+          </Link>
+          <Link
+            to="/login"
+            className="bg-white text-purple-700 border border-purple-700 px-3 py-1.5 rounded-md hover:bg-purple-50 hover:shadow-md transition duration-200 font-semibold text-sm"
+          >
+            Log In
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -83,6 +98,22 @@ export default function Navbar() {
           >
             Join Waitlist
           </a>
+
+          {/* ✅ React Router links for mobile */}
+          <Link
+            to="/signup"
+            className="block bg-purple-700 text-white px-3 py-1.5 rounded-md hover:bg-purple-900 hover:shadow-lg transition duration-200 font-semibold text-sm"
+            onClick={() => setMenuOpen(false)}
+          >
+            Sign Up
+          </Link>
+          <Link
+            to="/login"
+            className="block bg-white text-purple-700 border border-purple-700 px-3 py-1.5 rounded-md hover:bg-purple-50 hover:shadow-md transition duration-200 font-semibold text-sm"
+            onClick={() => setMenuOpen(false)}
+          >
+            Log In
+          </Link>
         </div>
       )}
     </nav>
