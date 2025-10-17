@@ -157,6 +157,7 @@ export default function Home() {
             <a href="https://www.instagram.com/p/DOHDU7ADPiU/?igsh=MW13bHExcWswOXYyOQ==" className="hover:text-green-400 transition-colors duration-300">Instagram</a>
             <a href="https://www.tiktok.com/t/ZP8BE1x69/" className="hover:text-green-400 transition-colors duration-300">Tiktok</a>
             <h3>Zoyaprocurement Ventures</h3>
+            <h4>Address:</h4><br /><p>Zone F, Behind New Central Bank, Ado Ekiti</p>
           </div>
         </div>
       </footer>
